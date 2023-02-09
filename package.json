@@ -1,0 +1,22 @@
+{
+  "name": "auto-lamp-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktor0502/auto-lamp-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viktor0502/auto-lamp-test/issues"
+  },
+  "homepage": "https://github.com/viktor0502/auto-lamp-test#readme",
+  "dependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}

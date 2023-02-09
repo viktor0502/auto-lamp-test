@@ -51,11 +51,13 @@
               >
             </div>
           </div>
-          <img class="car" src="./img/car.png" alt="car" />
+          <img class="car element-animation" src="./img/car.png" alt="car" />
           <div class="header__sidebar flex">
             <img class="vector" src="./img/Vector-v.svg" alt="vector" />
             <div class="header__social flex">
-              <a href="#" class="header__link"
+              <a
+                href="https://api.whatsapp.com/send?phone=+79104495499"
+                class="header__link"
                 ><svg
                   width="24"
                   height="24"
@@ -76,7 +78,7 @@
                   </defs>
                 </svg>
               </a>
-              <a href="#" class="header__link"
+              <a href="https://t.me/+79104495499" class="header__link"
                 ><svg
                   width="24"
                   height="24"
@@ -97,7 +99,7 @@
                   </defs>
                 </svg>
               </a>
-              <a href="#" class="header__link"
+              <a href="mailto:mitsumoro@yandex.ru" class="header__link"
                 ><svg
                   width="24"
                   height="24"
@@ -119,8 +121,12 @@
       </div>
     </header>
     <main>
+
       <section class="about">
         <h2 class="section__title">О нас</h2>
+        <div class="hover">
+          <span>Founder</span>
+        </div>
       </section>
       <section class="advantages">
         <div class="container">
@@ -211,6 +217,7 @@
               <input
                 type="tel"
                 name="phone"
+                id="phone"
                 required
                 placeholder="Номер телефона"
               />
@@ -218,7 +225,7 @@
                 ><input type="checkbox" required name="privacy" />Согласен с
                 обработкой персональных данных</label
               >
-              <button class="btn" type="submit">Отправить</button>
+              <button id="btn-form" class="btn" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -242,10 +249,14 @@
                 >
               </li>
               <li class="flex">
-                <a href="#" class="nav__link nav__contacts-link"
+                <a
+                  href="https://api.whatsapp.com/send?phone=+79104495499"
+                  class="nav__link nav__contacts-link"
                   ><img src="./img/whatsapp.svg" alt="whatsapp"
                 /></a>
-                <a href="#" class="nav__link nav__contacts-link"
+                <a
+                  href="https://t.me/+79104495499"
+                  class="nav__link nav__contacts-link"
                   ><img src="./img/tg.svg" alt="tg"
                 /></a>
                 <a
@@ -254,11 +265,29 @@
                   >+7 (910) 449 54 99</a
                 >
               </li>
-            </ul> 
+            </ul>
           </div>
           <p class="footer__text">Все права защищены</p>
         </div>
       </nav>
     </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <div class="popup__title">
+          <img src="./img/popup.png" alt="popup" />
+          <h4>Спасибо за вашу заявку!</h4>
+          <p>Мы свяжемся с Вами в ближайщее время.</p>
+        </div>
+        <span class="line"></span>
+        <div class="popup__bottom">
+          <small>Если Вы не хотите ждать, скорее звоните нам:</small>
+          <a href="tel:+79104495499">+7 (910) 449 54 99</a>
+        </div>
+        <div class="btn btn-close">Вернуться на сайт</div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bundle.js"></script>
   </body>
 </html>
