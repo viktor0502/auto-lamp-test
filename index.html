@@ -18,15 +18,15 @@
       <nav>
         <div class="container">
           <ul class="nav__menu flex">
-            <li><a href="#" class="nav__link">О нас</a></li>
-            <li><a href="#" class="nav__link">Преимущества</a></li>
-            <li><a href="#" class="nav__link">Контакты</a></li>
+            <li><a href="#about" class="nav__link">О нас</a></li>
+            <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+            <li><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
           <div class="nav__logo">
             <img src="./img/logo.png" alt="logo" />
           </div>
           <a href="tel:+79104495499" class="nav__phone nav__link flex"
-            ><img src="./img/call.svg" alt="phone" />+7 (910) 449 54 99</a
+            ><img src="./img/call.svg" alt="phone" /><span>+7 (910) 449 54 99</span></a
           >
         </div>
       </nav>
@@ -46,7 +46,7 @@
                 class="header__btn btn header__price"
                 >Скачать прайс-лист</a
               >
-              <a href="#" class="header__btn btn header__learn-more"
+              <a href="#contacts" class="nav__link header__btn btn header__learn-more"
                 >Узнать подробнее</a
               >
             </div>
@@ -121,95 +121,121 @@
       </div>
     </header>
     <main>
-
       <section class="about">
-        <h2 class="section__title">О нас</h2>
-        <div class="hover">
-          <span>Founder</span>
+        <div class="container">
+          <h2 class="about__title">
+            <span class="red-span">Японский бренд</span>, зарекомендовавший себя
+            с лучшей стороны на <span class="red-span">мировом рынке</span>
+            <span class="red-span">автомобильных</span> запчастей и
+            комплектующих
+          </h2>
+          <div class="about__wrapper"></div>
         </div>
       </section>
-      <section class="advantages">
-        <div class="container">
-          <div class="advantages__wrapper">
+      <section class="advantages" id="about">
+        <div class="advantages__bg"></div>
+        <div class="advantages__wrapper">
+          <div class="advantages__content">
+            <p>
+              <span class="bold">Главная цель компании</span> <br />
+              –
+              <span class="span-grey">повышение уровня безопасности</span> на
+              дорогах Российской Федерации.
+            </p>
+            <p>
+              «Mitsumoro» регулярно тестирует свою осветительную продукцию для
+              соблюдения высоких стандартов качества. Лампы изготавливаются с
+              использованием
+              <span class="span-grey bold">NANO технологий,</span> позволяя
+              достигать более
+              <span class="span-grey">высокую виброустойчивость,</span>
+              <span class="span-grey">светоотдачу и надежность.</span>
+              Все контакты обработаны против коррозии и не окисляются в фаре
+              автомобиля.
+            </p>
+          </div>
+          <div class="advantages__numbers">
             <div class="advantages__item">
-              <p class="advantages__text">
-                Cтабильное наличие всего ассортимента продукции
-              </p>
-              <img
-                src="./img/benefits1.png"
-                alt="benefit"
-                class="advantages__img"
-              />
-            </div>
-            <h2 class="section__title section__title--right">Преимущества</h2>
-            <div class="advantages__item">
-              <p class="advantages__text">
-                Возможность <br />
-                приобретать продукцию по индивидуальным тарифам
-              </p>
-              <img
-                src="./img/benefits2.png"
-                alt="benefit"
-                class="advantages__img"
-              />
-            </div>
-            <div class="advantages__item">
-              <p class="advantages__text">
-                Гибкий подход <br />
-                к каждому заказчику
-              </p>
-              <img
-                src="./img/benefits3.png"
-                alt="benefit"
-                class="advantages__img"
-              />
+              <h5 class="advantages__number">
+                <span class="number" id="year"></span> лет
+              </h5>
+              <p>опыта непрерывного использования в экстремальных условиях</p>
             </div>
             <div class="advantages__item">
-              <p class="advantages__text">Гарантия качества</p>
-              <img
-                src="./img/benefits4.png"
-                alt="benefit"
-                class="advantages__img"
-              />
-            </div>
-            <div class="advantages__item">
-              <p class="advantages__text">
-                Быстрая доставка товара транспортными компаниями <br />
-                на Ваш выбор
-              </p>
-              <img
-                src="./img/benefits5.png"
-                alt="benefit"
-                class="advantages__img"
-              />
-            </div>
-            <div class="advantages__item">
-              <p class="advantages__text">Обмен брака один к одному</p>
-              <img
-                src="./img/benefits6.png"
-                alt="benefit"
-                class="advantages__img"
-              />
-            </div>
-            <div class="advantages__item">
-              <p class="advantages__text">
-                Наличие знака омологации (соответствие европейским <br />
-                нормам безопасности)
-              </p>
-              <img
-                src="./img/benefits7.png"
-                alt="benefit"
-                class="advantages__img"
-              />
+              <h5 class="advantages__number">
+                <span class="number" id="continents"></span> континента
+              </h5>
+              <p>обеспечивает своей продукцией компания «Mitsumoro»</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="callback">
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <div class="benefits__wrapper">
+            <div
+              style="background-image: url(./img/advantages_bg1.png); background-color: #EE141F;"
+              class="benefits__item"
+            >
+              <p class="benefits__text">
+                Cтабильное наличие всего ассортимента продукции и возможность
+                приобретения по индивидуальным тарифам
+              </p>
+              <div class="benefits__img">
+                <img src="./img/advantages1.png" alt="advantages" />
+              </div>
+            </div>
+            <div
+              style="background-image: url(./img/advantages_bg2.png); background-color: #202020;"
+              class="benefits__item"
+            >
+              <p class="benefits__text">
+                Гарантия качества и гибкий подход к каждому заказчику
+              </p>
+              <div class="benefits__img">
+                <img src="./img/advantages2.png" alt="advantages" />
+              </div>
+            </div>
+            <div
+              style="background-image: url(./img/advantages_bg3.png); background-color: #484848;"
+              class="benefits__item"
+            >
+              <p class="benefits__text">
+                Быстрая доставка товара транспортными компаниями на Ваш выбор
+              </p>
+              <div class="benefits__img">
+                <img src="./img/advantages3.png" alt="advantages" />
+              </div>
+            </div>
+            <div
+              style="background-image: url(./img/advantages_bg4.png); background-color: #8E8E8E;"
+              class="benefits__item"
+            >
+              <p class="benefits__text">Обмен брака один к одному</p>
+              <div class="benefits__img">
+                <img src="./img/advantages4.png" alt="advantages" />
+              </div>
+            </div>
+            <div
+              style="background-image: url(./img/advantages_bg5.png); background-color: #fff;"
+              class="benefits__item"
+            >
+              <p style="color: #202020" class="benefits__text">
+                Наличие знака омологации (соответствие европейским нормам
+                безопасности)
+              </p>
+              <div class="benefits__img">
+                <img src="./img/advantages5.png" alt="advantages" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback" id="contacts">
         <div class="container">
           <div class="callback__wrapper">
             <div class="callback__title">
-              <h2 class="section__title">Мы всегда на связи</h2>
+              <h2>Мы всегда на связи</h2>
               <p>Оставьте заявку, и мы ответим на все Ваши вопросы</p>
             </div>
             <form>
@@ -236,9 +262,9 @@
         <div class="container">
           <div class="nav__wrapper flex">
             <ul class="nav__menu flex">
-              <li><a href="#" class="nav__link">О нас</a></li>
-              <li><a href="#" class="nav__link">Преимущества</a></li>
-              <li><a href="#" class="nav__link">Контакты</a></li>
+              <li><a href="#about" class="nav__link">О нас</a></li>
+              <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li><a href="#contacts" class="nav__link">Контакты</a></li>
             </ul>
             <ul class="nav__contacts flex">
               <li>
@@ -271,7 +297,7 @@
         </div>
       </nav>
     </footer>
-    <div class="popup">
+    <div class="popup popup--active">
       <div class="popup__container">
         <div class="popup__title">
           <img src="./img/popup.png" alt="popup" />
@@ -286,8 +312,18 @@
         <div class="btn btn-close">Вернуться на сайт</div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
