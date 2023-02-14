@@ -26,7 +26,7 @@ function showAnimation(){
         });
       }
       function counter(num, elem, step) {
-        const time = 1000;
+        const time = 500;
         let l = document.querySelector(elem);
         let n = 0;
         let t = Math.round(time / (num / step));

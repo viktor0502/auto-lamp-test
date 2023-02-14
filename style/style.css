@@ -284,6 +284,13 @@ nav .container {
   font-size: 23px;
 }
 
+.nav__contacts-link, .nav__phone {
+  transition: 0.2s;
+}
+.nav__contacts-link:hover, .nav__phone:hover {
+  color: #ee141f;
+}
+
 .span-grey {
   position: relative;
   z-index: 10;
@@ -354,20 +361,10 @@ nav .container {
 .callback {
   position: relative;
   padding-bottom: 200px;
-}
-.callback::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  transform: rotate(180deg);
-  bottom: -50%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/bg.png);
-  background-size: 100% 100%;
+  background: url(../img/footer-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 100%;
+  background-position: bottom;
 }
 
 .callback__wrapper {
@@ -959,5 +956,13 @@ footer .container {
     padding: 0 15px;
     margin: 0;
     max-width: unset;
+  }
+  .benefits__text span {
+    display: block;
+  }
+  form label input {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
   }
 }/*# sourceMappingURL=style.css.map */
